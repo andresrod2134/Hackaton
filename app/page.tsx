@@ -1,3 +1,5 @@
+'use client';
+
 import ProgressCard from "./progress_bar";
 import Timer from "./timer";
 import BasicExample from "./punto1";
