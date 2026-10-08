@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import "./ProgressCard.css";
 
 function ProgressCard() {
     const [value, setValue] = useState(0);
@@ -12,7 +13,8 @@ function ProgressCard() {
             <ProgressBar
                 now={value}
                 label={`${value}%`}
-                style={{ height: 30 }}
+                className="barra"
+                style={{ height: 34 }}
             />
 
             <form className="mt-4 d-flex justify-content-center align-items-center gap-3">
@@ -24,12 +26,11 @@ function ProgressCard() {
                     max="100"
                     value={value}
                     onChange={(e) => setValue(Number(e.target.value))}
-                    className="form-control w-auto"
+                    className="form-control w-auto input-pildora"
                 />
             </form>
         </div>
     );
 }
-
 
 export default ProgressCard;

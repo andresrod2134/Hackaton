@@ -1,0 +1,16 @@
+.barra {
+    background-color: #bdbbbd;
+    border-radius: 999px;
+}
+
+.barra .progress-bar {
+    background-color: #f0647a;
+    border-radius: 999px;
+    min-width: 48px;
+}
+
+.input-pildora {
+    border: 2px solid #222;
+    border-radius: 999px;
+    width: 100px;
+}
