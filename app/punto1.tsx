@@ -3,15 +3,15 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 function BasicExample() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    
+    <Navbar expand="lg" className="bg-body-tertiary" style={{ transform: 'rotate(180deg)' }}>
       <Container>
         <Navbar.Brand href="#home">Navbar</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -23,9 +23,27 @@ function BasicExample() {
             <Nav.Link href="#about">About</Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        <Form>
+          <Row>
+            <Col xs="auto">
+              <Form.Control
+                type="text"
+                placeholder="Search"
+                className="me-sm-2"
+              />
+            </Col>
+            <Col xs="auto">
+              <Button type="search">Search</Button>
+            </Col>
+          </Row>
+        </Form>
       </Container>
     </Navbar>
   );
 }
 
 export default BasicExample;
+
+
+
+
