@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
+//se uso el que estaba en la documentacion de react navbar 
 function BasicExample() {
   return (
     
