@@ -6,7 +6,7 @@ function Formulario() {
     <Form>
       <Form.Group className="mb-3" controlId="Username">
         <Form.Label>Username</Form.Label>
-        <Form.Control type="user-name" placeholder="test" />
+        <Form.Control type="user-name" placeholder="username" />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="FullName">
